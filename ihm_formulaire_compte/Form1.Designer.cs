@@ -47,6 +47,7 @@
             this.lbl_resume = new System.Windows.Forms.Label();
             this.gbx_resume = new System.Windows.Forms.GroupBox();
             this.btn_juste_prix = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.gbx_saisie.SuspendLayout();
             this.gbx_resume.SuspendLayout();
             this.SuspendLayout();
@@ -250,11 +251,21 @@
             this.btn_juste_prix.UseVisualStyleBackColor = true;
             this.btn_juste_prix.Click += new System.EventHandler(this.btn_juste_prix_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(694, 416);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 16);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "By SebPern";
+            // 
             // frm_create
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.gbx_resume);
             this.Controls.Add(this.gbx_saisie);
             this.ForeColor = System.Drawing.Color.Black;
@@ -265,6 +276,7 @@
             this.gbx_resume.ResumeLayout(false);
             this.gbx_resume.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -289,6 +301,7 @@
         private System.Windows.Forms.GroupBox gbx_resume;
         private System.Windows.Forms.Label lbl_resume;
         private System.Windows.Forms.Button btn_juste_prix;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -109,5 +109,7 @@ namespace ihm_formulaire_compte
             JustePrix justePrix = new JustePrix();
             justePrix.Show();
         }
+
+
     }
 }

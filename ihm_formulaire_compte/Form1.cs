@@ -20,6 +20,8 @@ namespace ihm_formulaire_compte
 
         private void btn_creer_Click(object sender, EventArgs e)
         {
+            //declaration d'une variable boolean 
+            //initialise la variable à false
             Boolean error = false;
 
             if (tbx_pseudo.Text == "")
@@ -45,7 +47,7 @@ namespace ihm_formulaire_compte
                     error = true;
                 }
             }
-            if (tbx_password.Text == "" && tbx_password.Text.Length<=4)
+            if (tbx_password.Text == "" || tbx_password.Text.Length<=4)
             {
                 tbx_password.BackColor = Color.Red;
                 lbl_error_password.Visible = true;
@@ -63,7 +65,7 @@ namespace ihm_formulaire_compte
                 lbl_error_accord.Visible = true;
                 error = true;
             }
-
+            //if (error==false)
             if (!error)
             {
                 gbx_saisie.Visible = false;

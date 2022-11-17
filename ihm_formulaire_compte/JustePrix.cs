@@ -23,8 +23,8 @@ namespace ihm_formulaire_compte
 
         private void btn_start_Click(object sender, EventArgs e)
         {
-            Random rnd = new Random();
-            nombre = rnd.Next(0, 1000);
+        
+            nombre =15;
             btn_test.Visible=true;
         }
 

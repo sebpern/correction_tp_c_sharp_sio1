@@ -16,7 +16,7 @@ namespace ihm_formulaire_compte
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_create());
+            Application.Run(new tableau());
         }
     }
 }

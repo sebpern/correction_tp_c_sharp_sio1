@@ -12,7 +12,7 @@ namespace ihm_formulaire_compte
 {
     public partial class tableau : Form
     {
-
+       //On le déclare ici pour avoir acces à cette variable dans tous les ss pg
         int[] resultats = new int[6];
 
         public tableau()
@@ -41,6 +41,31 @@ namespace ihm_formulaire_compte
                
             }
             lblPoint.Text = nbPoint.ToString();
+        }
+
+        private void btnInvaincu_Click(object sender, EventArgs e)
+        {
+            Boolean defaite = false;
+            int i = 0;
+            while(defaite==false && i < 6)
+            {
+                if (resultats[i] == 2)
+                {
+                    defaite = true;
+                }
+                else
+                {
+                    i++;
+                }
+            }
+            if (defaite == false)
+            {
+                lblInvaincu.Text = "Vous êtes invaincu";
+            }
+            else
+            {
+                lblInvaincu.Text = "Vous avez perdu le match numéro " + i ;
+            }
         }
     }
 }
